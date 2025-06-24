@@ -4,12 +4,35 @@ import java.util.Scanner;
 
 // Time Complexity: O(sqrt(n))
 // Space Complexity: O(1)
-public class prime {
+public class Prime {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number: ");
+//        int start = sc.nextInt();
+//        int end = sc.nextInt();
+//        check(start,end);
         int n = sc.nextInt();
-        System.out.println(prime(n));
+        int m = sc.nextInt();
+        System.out.println(checkPrime(n)+checkPrime(m));
+    }
+    public static int checkPrime(int n){
+        int count =0;
+        int i =1;
+        while(true){
+            if(prime(i)){
+                count++;
+                if(n==count){
+                    return i;
+                }
+            }
+            i++;
+        }
+    }
+    public static void check(int start ,int end){
+        for(int i =start;i<=end;i++){
+            if(prime(i)){
+                System.out.print(i+" ");
+            }
+        }
     }
 
     // Function to check if a number is prime
