@@ -7,7 +7,7 @@ public class Insert {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[5];
-//        int n = 4; // current number of elements
+//      int n = 4; // current number of elements
 
         System.out.println("Enter 4 elements:");
         for (int i = 0; i < arr.length; i++) {
@@ -16,7 +16,7 @@ public class Insert {
 
         int x = 5;
         int pos = 2;
-//        n = insert(arr, n, x, pos);
+//      int n = insert(arr, n, x, pos);
         int n = delete(arr,x,arr.length);
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
