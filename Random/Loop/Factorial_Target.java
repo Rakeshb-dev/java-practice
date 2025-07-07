@@ -17,7 +17,7 @@ public class Factorial_Target {
 
         int i = num/2;
         int count =1;
-        while(i>=0){
+        while(i>0){
             if(num%i==0){
                 count++;
             }
